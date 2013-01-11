@@ -22,46 +22,17 @@
  */
 package net.blimster.gwt.threejs.materials;
 
-import net.blimster.gwt.threejs.textures.Texture;
-import net.blimster.gwt.threejs.materials.Material;
-
 /**
  * This file is generated, do not edit.
  */
-public final class MeshLambertMaterial extends Material
-{
-	
-	protected MeshLambertMaterial()
-	{
+public final class MeshNormalMaterial extends Material {
+
+	protected MeshNormalMaterial() {
 		super();
 	}
-	
-	
-	
-	
-	
-	public static native MeshLambertMaterial create(int _color)
+
+	public static native MeshNormalMaterial create(int _color)
 	/*-{
-		
-		return new $wnd.THREE.MeshLambertMaterial({ color : _color });
-		
+		return new $wnd.THREE.MeshNormalMaterial({ color: _color });
 	}-*/;
-	
-public static native MeshLambertMaterial create(Texture _map)
-	/*-{
-		
-		return new $wnd.THREE.MeshLambertMaterial({ map : _map });
-		
-	}-*/;
-	
-public static native MeshLambertMaterial create(int _color, Texture _map)
-	/*-{
-		
-		return new $wnd.THREE.MeshLambertMaterial({ color : _color, map : _map });
-		
-	}-*/;
-	
-	
-	
-	
 }

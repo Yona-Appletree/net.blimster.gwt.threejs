@@ -20,54 +20,22 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.materials;
+package net.blimster.gwt.threejs.extras.geometries;
 
-import net.blimster.gwt.threejs.core.Color;
-import net.blimster.gwt.threejs.materials.Material;
+import net.blimster.gwt.threejs.core.Geometry;
 
 /**
  * This file is generated, do not edit.
  */
-public final class ParticleBasicMaterial extends Material
+public final class IcosahedronGeometry extends Geometry
 {
-	
-	protected ParticleBasicMaterial()
+	protected IcosahedronGeometry()
 	{
 		super();
 	}
-	
-	public static ParticleBasicMaterialBuilder with()
-	{
-		
-		return ParticleBasicMaterialBuilder.create();
-		
-	}
-	
-	
-	
-	
-	public static native ParticleBasicMaterial create(double _size, Color _color)
+
+	public static native IcosahedronGeometry create(double radius, int detail)
 	/*-{
-		
-		return new $wnd.THREE.ParticleBasicMaterial({ size : _size, color : _color });
-		
+		return new $wnd.THREE.IcosahedronGeometry(radius, detail);
 	}-*/;
-	
-	
-	public final native void setColor(Color color)
-	/*-{
-		
-		this.color = color;
-		
-	}-*/;
-	
-	public final native Color getColor()
-	/*-{
-		
-		return this.color;
-		
-	}-*/;
-	
-	
-	
 }

@@ -20,32 +20,22 @@
  * mail: oliver [dot] damm [at] gmx [dot] de
  * web: http://www.blimster.net 
  */
-package net.blimster.gwt.threejs.materials;
+package net.blimster.gwt.threejs.extras.geometries;
 
-import net.blimster.gwt.threejs.materials.Material;
+import net.blimster.gwt.threejs.core.Geometry;
 
 /**
  * This file is generated, do not edit.
  */
-public final class MeshFaceMaterial extends Material
+public final class CylinderGeometry extends Geometry
 {
-	
-	protected MeshFaceMaterial()
+	protected CylinderGeometry()
 	{
 		super();
 	}
-	
-	
-	public static native MeshFaceMaterial create()
+
+	public static native CylinderGeometry create(double radiusTop, double radiusBottom, double height, int radiusSegments, int heightSegments, boolean openEnded)
 	/*-{
-		
-		return new $wnd.THREE.MeshFaceMaterial();
-		
+		return new $wnd.THREE.CylinderGeometry(radiusTop, radiusBottom, height, radiusSegments, heightSegments, openEnded);
 	}-*/;
-	
-	
-	
-		
-	
-	
 }
