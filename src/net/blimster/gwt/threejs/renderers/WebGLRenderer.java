@@ -54,7 +54,7 @@ public final class WebGLRenderer extends AbstractWebGLRenderer
 
 		return new $wnd.THREE.WebGLRenderer( {
 			canvas : canvasElement,
-			antialias : _antialias,
+			antialias : _antialias
 		});
 
     }-*/;

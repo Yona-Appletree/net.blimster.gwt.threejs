@@ -23,6 +23,7 @@
 package net.blimster.gwt.threejs.materials;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import net.blimster.gwt.threejs.core.Color;
 
 /**
  * This file is generated, do not edit.
@@ -37,5 +38,18 @@ public abstract class Material extends JavaScriptObject
 
 	public final native void setOpacity(double opacity)/*-{
 		this.opacity = opacity;
+	}-*/;
+
+	public final native double getOpacity(double opacity)/*-{
+		return this.opacity;
+	}-*/;
+
+
+	public final native void setColor(Color color)/*-{
+		this.color = color;
+	}-*/;
+
+	public final native Color getColor()/*-{
+		return this.color;
 	}-*/;
 }

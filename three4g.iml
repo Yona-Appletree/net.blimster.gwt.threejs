@@ -3,8 +3,13 @@
   <component name="FacetManager">
     <facet type="gwt" name="GWT">
       <configuration>
+        <setting name="compilerMaxHeapSize" value="256" />
+        <setting name="gwtScriptOutputStyle" value="DETAILED" />
         <setting name="gwtSdkUrl" value="file://$MAVEN_REPOSITORY$/com/google/gwt/gwt-dev/2.5.0/" />
         <setting name="gwtSdkType" value="maven" />
+        <packaging>
+          <module name="net.blimster.gwt.threejs" enabled="false" />
+        </packaging>
       </configuration>
     </facet>
   </component>

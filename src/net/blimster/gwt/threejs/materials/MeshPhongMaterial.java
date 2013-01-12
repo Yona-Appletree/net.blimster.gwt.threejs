@@ -22,19 +22,20 @@
  */
 package net.blimster.gwt.threejs.materials;
 
+import net.blimster.gwt.threejs.core.Color;
 import net.blimster.gwt.threejs.textures.Texture;
 
 /**
  * This file is generated, do not edit.
  */
-public final class MeshPhongMaterial extends Material
-{
-	
-	protected MeshPhongMaterial()
-	{
-		super();
-	}
+public final class MeshPhongMaterial extends Material {
 
+	protected MeshPhongMaterial() {}
+
+	public static native MeshPhongMaterial create()
+	/*-{
+		return new $wnd.THREE.MeshPhongMaterial();
+	}-*/;
 
 	public static native MeshPhongMaterial create(int _color)
 	/*-{
@@ -48,9 +49,66 @@ public final class MeshPhongMaterial extends Material
 			shininess: _shininess
 		});
 	}-*/;
-	
-public static native MeshPhongMaterial create(Texture _map)
+
+	public static native MeshPhongMaterial create(Texture _map)
 	/*-{
-		return new $wnd.THREE.MeshPhongMaterial({ map : _map });
+		return new $wnd.THREE.MeshPhongMaterial({ map: _map });
 	}-*/;
+
+
+	public final native MeshPhongMaterial setAmbient(Color ambient)/*-{
+		this.ambient = ambient;
+		return this;
+	}-*/;
+
+	public final native Color getAmbient()/*-{
+		return this.ambient;
+	}-*/;
+
+	public final native MeshPhongMaterial setEmissive(Color emissive)/*-{
+		this.emissive = emissive;
+		return this;
+	}-*/;
+
+	public final native Color getEmissive()/*-{
+		return this.emissive;
+	}-*/;
+
+	public final native MeshPhongMaterial setSpecular(Color specular)/*-{
+		this.specular = specular;
+		return this;
+	}-*/;
+
+	public final native Color getSpecular()/*-{
+		return this.specular;
+	}-*/;
+
+	public final native MeshPhongMaterial setShininess(double shininess)/*-{
+		this.shininess = shininess;
+		return this;
+	}-*/;
+
+	public final native double getShininess()/*-{
+		return this.shininess;
+	}-*/;
+
+	public final native MeshPhongMaterial setReflectivity(double reflectivity)/*-{
+		this.reflectivity = reflectivity;
+		return this;
+	}-*/;
+
+	public final native double getReflectivity()/*-{
+		return this.reflectivity;
+	}-*/;
+
+	public final native MeshPhongMaterial setMetal(boolean metal)/*-{
+		this.metal = metal;
+		return this;
+	}-*/;
+
+	public final native boolean getMetal()/*-{
+		return this.metal;
+	}-*/;
+
+
 }

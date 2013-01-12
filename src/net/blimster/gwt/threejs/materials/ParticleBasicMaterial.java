@@ -42,32 +42,12 @@ public final class ParticleBasicMaterial extends Material
 		return ParticleBasicMaterialBuilder.create();
 		
 	}
-	
-	
-	
-	
+
 	public static native ParticleBasicMaterial create(double _size, Color _color)
 	/*-{
 		
 		return new $wnd.THREE.ParticleBasicMaterial({ size : _size, color : _color });
 		
 	}-*/;
-	
-	
-	public final native void setColor(Color color)
-	/*-{
-		
-		this.color = color;
-		
-	}-*/;
-	
-	public final native Color getColor()
-	/*-{
-		
-		return this.color;
-		
-	}-*/;
-	
-	
-	
+
 }
