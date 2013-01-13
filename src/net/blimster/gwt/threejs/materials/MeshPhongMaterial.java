@@ -111,4 +111,8 @@ public final class MeshPhongMaterial extends Material {
 	}-*/;
 
 
+	public native MeshPhongMaterial setTransparent(final boolean transparent)/*-{
+		this.transparent = transparent;
+		return this;
+	}-*/;
 }
