@@ -22,16 +22,12 @@
  */
 package net.blimster.gwt.threejs.lights;
 
-import net.blimster.gwt.threejs.lights.Light;
-
 /**
  * This file is generated, do not edit.
  */
 public final class PointLight extends Light {
 
-	protected PointLight() {
-		super();
-	}
+	protected PointLight() {}
 
 
 	public static native PointLight create(int hex)

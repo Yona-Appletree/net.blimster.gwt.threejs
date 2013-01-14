@@ -22,6 +22,7 @@
  */
 package net.blimster.gwt.threejs.lights;
 
+import net.blimster.gwt.threejs.core.Color;
 import net.blimster.gwt.threejs.core.Object3D;
 
 /**
@@ -29,10 +30,13 @@ import net.blimster.gwt.threejs.core.Object3D;
  */
 public abstract class Light extends Object3D
 {
-	
-	protected Light()
-	{
-		super();
-	}
+	protected Light() {}
 
+	public final native void setColor(final Color color)/*-{
+		this.color = color;
+	}-*/;
+
+	public final native Color getColor()/*-{
+		return this.color;
+	}-*/;
 }

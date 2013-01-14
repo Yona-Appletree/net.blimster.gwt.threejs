@@ -459,17 +459,19 @@ public abstract class Object3D extends JavaScriptObject
 		this.lookAt(vector);
 	}-*/;
 	
-	public final native void add(Object3D object)
+	public final native <T extends Object3D> T add(T object)
 	/*-{
 		
 		this.add(object);
+		return object;
 		
 	}-*/;
 	
-	public final native void remove(Object3D object)
+	public final native <T extends Object3D> T remove(T object)
 	/*-{
 		
 		this.remove(object);
+		return object;
 		
 	}-*/;
 	

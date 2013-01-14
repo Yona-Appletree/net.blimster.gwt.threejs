@@ -185,4 +185,9 @@ public final class Matrix4 extends JavaScriptObject
 	public final native void setPosition(final Vector3 vector3)/*-{
 		this.setPosition(vector3);
 	}-*/;
+
+	public final native void scale(final Vector3 vector3)/*-{
+		this.scale(vector3);
+	}-*/;
+
 }
