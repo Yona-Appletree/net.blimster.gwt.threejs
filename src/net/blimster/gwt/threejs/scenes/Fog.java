@@ -46,7 +46,7 @@ public final class Fog extends AbstractFog
 	
 	
 	
-	public static native Fog create(Color color, int near, int far)
+	public static native Fog create(int color, int near, int far)
 	/*-{
 		
 		return new $wnd.THREE.Fog(color, near, far);
