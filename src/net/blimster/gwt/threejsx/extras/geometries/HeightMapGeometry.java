@@ -27,7 +27,7 @@ import net.blimster.gwt.threejs.core.Face4;
 import net.blimster.gwt.threejs.core.Geometry;
 import net.blimster.gwt.threejs.core.UV;
 import net.blimster.gwt.threejs.core.Vector3;
-import net.blimster.gwt.threejsx.util.Arrays;
+import net.blimster.gwt.threejsx.util.JsArrays;
 
 import com.google.gwt.core.client.JsArray;
 
@@ -108,9 +108,15 @@ public final class HeightMapGeometry extends Geometry
 
 		result.getFaces().push(face);
 		result.getFaceVertexUvs().get(0).push(
-			Arrays.createArray(UV.create(ix / (double) gridX, iy / (double) gridY), UV.create(ix
-				/ (double) gridX, (iy + 1) / (double) gridY), UV.create((ix + 1) / (double) gridX,
-				(iy + 1) / (double) gridY), UV.create((ix + 1) / (double) gridX, iy / (double) gridY)));
+			JsArrays.createArray(
+				UV.create(ix / (double) gridX, iy / (double) gridY), UV.create(
+				ix
+					/ (double) gridX, (iy + 1) / (double) gridY
+			), UV.create(
+				(ix + 1) / (double) gridX,
+				(iy + 1) / (double) gridY
+			), UV.create((ix + 1) / (double) gridX, iy / (double) gridY)
+			));
 	    }
 	}
 

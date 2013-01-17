@@ -13,8 +13,13 @@ public class ExtrudeGeometry extends Geometry {
 	protected ExtrudeGeometry() {
 	}
 
-	public static native ExtrudeGeometry create(JsArray<Shape> shapes, ExtrudeOptions options)/*-{
-		return new THREE.create(shapes, options);
+
+	public static native ExtrudeGeometry createExtrudeGeometry()/*-{
+		return new $wnd.THREE.ExtrudeGeometry();
+	}-*/;
+
+	public static native ExtrudeGeometry createExtrudeGeometry(JsArray<Shape> shapes, ExtrudeOptions options)/*-{
+		return new $wnd.THREE.ExtrudeGeometry(shapes, options);
 	}-*/;
 
 	public final native void addShapeList(JsArray<Shape> shapes, ExtrudeOptions options)/*-{

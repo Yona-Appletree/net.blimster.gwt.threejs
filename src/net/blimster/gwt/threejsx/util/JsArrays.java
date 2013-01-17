@@ -28,19 +28,30 @@ import com.google.gwt.core.client.JsArray;
 /**
  * @author Oliver Damm
  */
-public class Arrays
-{
+public class JsArrays {
 
-    public static <T extends JavaScriptObject> JsArray<T> createArray(T... elements)
-    {
-	JsArray<T> result = JavaScriptObject.createArray().cast();
+	public static <T extends JavaScriptObject> JsArray<T> createArray(T... elements) {
+		JsArray<T> result = newArray();
 
-	for (T element : elements)
-	{
-	    result.push(element);
+		for (T element : elements) {
+			result.push(element);
+		}
+
+		return result;
 	}
 
-	return result;
-    }
 
+	public static <T extends JavaScriptObject> JsArray<T> createArray(Iterable<T> elements) {
+		JsArray<T> result = newArray();
+
+		for (T element : elements) {
+			result.push(element);
+		}
+
+		return result;
+	}
+
+	public final static native <T extends JavaScriptObject> JsArray<T> newArray()/*-{
+		return new $wnd.Array();
+	}-*/;
 }

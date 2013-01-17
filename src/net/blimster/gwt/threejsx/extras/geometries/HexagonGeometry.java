@@ -27,7 +27,7 @@ import net.blimster.gwt.threejs.core.Geometry;
 import net.blimster.gwt.threejs.core.Matrix4;
 import net.blimster.gwt.threejs.core.UV;
 import net.blimster.gwt.threejs.core.Vector3;
-import net.blimster.gwt.threejsx.util.Arrays;
+import net.blimster.gwt.threejsx.util.JsArrays;
 
 /**
  * @author Oliver Damm
@@ -64,13 +64,13 @@ public final class HexagonGeometry extends Geometry
 	result.getFaces().push(face);
 
 	result.getFaceVertexUvs().get(0).push(
-		Arrays.createArray(UV.create(0.5, 0.0), UV.create(1.0, 0.25), UV.create(0.0, 0.25)));
+		JsArrays.createArray(UV.create(0.5, 0.0), UV.create(1.0, 0.25), UV.create(0.0, 0.25)));
 	result.getFaceVertexUvs().get(0).push(
-		Arrays.createArray(UV.create(0.0, 0.25), UV.create(0.0, 0.75), UV.create(1.0, 0.25)));
+		JsArrays.createArray(UV.create(0.0, 0.25), UV.create(0.0, 0.75), UV.create(1.0, 0.25)));
 	result.getFaceVertexUvs().get(0).push(
-		Arrays.createArray(UV.create(0.0, 0.75), UV.create(1.0, 0.75), UV.create(1.0, 0.25)));
+		JsArrays.createArray(UV.create(0.0, 0.75), UV.create(1.0, 0.75), UV.create(1.0, 0.25)));
 	result.getFaceVertexUvs().get(0).push(
-		Arrays.createArray(UV.create(0.0, 0.75), UV.create(0.5, 1.00), UV.create(1.0, 0.75)));
+		JsArrays.createArray(UV.create(0.0, 0.75), UV.create(0.5, 1.00), UV.create(1.0, 0.75)));
 
 	result.computeFaceNormals();
 
