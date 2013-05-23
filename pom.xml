@@ -10,7 +10,7 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<version.gwt>2.5.0</version.gwt>
+		<version.gwt>2.5.1</version.gwt>
 		<version.three4g.wdl>1.0.0-SNAPSHOT</version.three4g.wdl>
 	</properties>
 
